@@ -1,0 +1,125 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:#f4f7fb;
+}
+
+.myProfile-card{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff; 
+    border-radius: 24px;
+    padding: 25px;
+    background: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.myProfile-card::before{
+    content:"";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+    
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-bottom:10px ;
+}
+
+.image .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid  black;
+   
+}
+
+.myProfile-card .text-data {
+    display: flex ;
+    flex-direction: column;
+    color:black;
+  
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500px;
+    margin-top: 15px;
+}
+
+.media-buttons .link{
+    height:100px;
+    width: 100px;
+    margin: 0 8px;
+    font-size: 18px;
+    color: #f4f7fb;
+   align-items: center;
+   justify-content: center;
+    border-radius: 400%;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.myProfile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .btn{
+    color: #f4f7fb;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: blue;
+}
+
+.myProfile-card .analytics{
+    display: flex;
+margin-top: 10px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items:center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #f4f7fb;
+}
+
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
